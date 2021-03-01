@@ -1,0 +1,16 @@
+diff --git a/backports/backports.txt b/backports/backports.txt
+index 58edd03..db97f69 100644
+--- a/backports/backports.txt
++++ b/backports/backports.txt
+@@ -137,6 +137,11 @@ add v4.5_vb2_cpu_access.patch
+ add v4.4_gpio_chip_parent.patch
+ add v4.4_user_pages_flag.patch
+
++[4.4.59]
++delete v5.11_isa.patch
++delete v4.4_user_pages_flag.patch
++delete v4.11_vb2_kmap.patch
++
+ [4.3.255]
+ delete v4.4_user_pages_flag.patch
+ add v4.3_bt87x_const_fix.patch
