@@ -3,6 +3,7 @@ FROM debian:buster-slim
 ENV PACKAGES \
 	build-essential \
 	git \
+	kmod \
 	libproc-processtable-perl \
 	patchutils \
 	python \
