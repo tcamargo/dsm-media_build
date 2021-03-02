@@ -7,7 +7,6 @@ ENV PACKAGES \
 	libproc-processtable-perl \
 	patchutils \
 	python \
-
 	vim \
 	wget
 
