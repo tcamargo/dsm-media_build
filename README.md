@@ -4,12 +4,12 @@ a Synology NAS and DSM 6.2.3. It only supports x86_64 (apollolake), but you can 
 1. Clone repository and build docker image. Don't use the image available on Dockerhub. 
 ```bash
 git clone --depth 1 https://github.com/tcamargo/dsm-media_build.git
-cd dsm-media_build && docker build -t discworld/dsm-media_build .
+cd dsm-media_build && make docker-image
 ```
 
 2. Compile media drivers
 ```bash
-docker run --rm -it -v $(pwd)/../dsm-media_build:/dsm-media_build discworld/dsm-media_build
+make docker-container
 make
 ```
 

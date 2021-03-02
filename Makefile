@@ -10,4 +10,10 @@ media_build:
 	@git clone --depth 5 git://linuxtv.org/media_build.git
 
 clean:
-	@rm media_build
+	@rm -rf media_build
+
+docker-image:
+	@docker build -t discworld/dsm-media_build .
+
+docker-container:
+	@docker run --rm -it -v $$(pwd)/../dsm-media_build:/dsm-media_build discworld/dsm-media_build
